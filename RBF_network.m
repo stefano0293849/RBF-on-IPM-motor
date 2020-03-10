@@ -1,4 +1,4 @@
-%Autore: Pota Stefano, Dipartimento di Ingegneria Elettronica, Universit‡ Degli Studi di Udine, 116983, pota.stefano@spes.uniud.it
+%Autore: Pota Stefano, Dipartimento di Ingegneria Elettronica, Universit√† Degli Studi di Udine, 116983, pota.stefano@spes.uniud.it
 %Data: 06/06/19
 %Testato con versione di Matlab 2018.a , potrebbe dare qualche errore se usato con versioni precedenti
 
@@ -12,7 +12,7 @@ addpath('.\FunzioneEsternaPerOutputColorato\');                            %Aggi
 %Parameters
 %****************
 In=12;                                                                     %Valore corrente nominale                               
-deltaG=0.25*In;                                                            %Distanza funzioni gaussiane, quello ottimo secondo il paper Ë 0.25 di In
+deltaG=0.25*In;                                                            %Distanza funzioni gaussiane, quello ottimo secondo il paper √® 0.25 di In
 
 cprintf('_Keywords', '\nCreating matrix of gaussian function..\n');
 
@@ -31,7 +31,7 @@ W=10*rand(K,2);                                                            %Valo
 Mu=0.01;                                                                   %Costante per noi
 Rs=3.4;                                                                    %Resistenza statore nota e costante
 pp=2;                                                                      %Numero poli
-Wme=100/pp;                                                                %Velocit‡ elettrica
+Wme=100/pp;                                                                %Velocit√† elettrica
 Lmg=0.221613;                                                              %Flusso magnetico
 Ntraining=10;                                                              %Numero di training points
 
@@ -141,7 +141,7 @@ shading faceted;
 cprintf('_Keywords', '\nPlot the ''Real'' lambda d and q ..\n');
 
 %'Real' flux map
-load('cross_saturation_D-12Q_1_12Q_-12D_1_4D.mat');
+load('cross_saturation_D-12Q_1_12Q_-12D_1_4D.mat'); %funzioni non presenti nel repository non essendo mie.
 load('cross_saturation_Q-12Q_1_12Q_-12D_1_4D.mat');
 i_d = cross_saturation_D(1, 2:end);
 i_q = cross_saturation_Q(2:end, 1);
